@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nadeche.mr_potato_head.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textSize="25sp"
+        android:id="@+id/title"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/potato_head_frame">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/body"
+            android:id="@+id/head" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arms"
+            android:id="@+id/arms"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ears"
+            android:id="@+id/ears"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyebrows"
+            android:id="@+id/eyebrowes"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyes"
+            android:id="@+id/eyes"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/glasses"
+            android:id="@+id/glasses" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hat"
+            android:id="@+id/hat"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mouth"
+            android:id="@+id/mouth"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mustache"
+            android:id="@+id/mustache"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nose"
+            android:id="@+id/nose"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoes"
+            android:id="@+id/shoes" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/potato_head_frame"
+        android:layout_centerHorizontal="true"
+        android:text="Build your own Mr. Potato head!"
+        android:textSize="18sp"
+        android:id="@+id/build_message"/>
+
+   <GridLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/build_message">
+
+       <CheckBox
+           android:layout_column="0"
+           android:layout_row="0"
+           android:text="Nose" />
+
+       <CheckBox
+           android:layout_column="1"
+           android:layout_row="0"
+           android:text="Arms"/>
+
+       <CheckBox
+           android:layout_column="0"
+           android:layout_row="1"
+           android:text="Ears" />
+
+       <CheckBox
+           android:layout_column="1"
+           android:layout_row="1"
+           android:text="Eyebrowes"/>
+
+       <CheckBox
+           android:layout_column="0"
+           android:layout_row="2"
+           android:text="Eyes" />
+
+       <CheckBox
+           android:layout_column="1"
+           android:layout_row="2"
+           android:text="Glasses"/>
+
+       <CheckBox
+           android:layout_column="0"
+           android:layout_row="3"
+           android:text="Hat" />
+
+       <CheckBox
+           android:layout_column="1"
+           android:layout_row="3"
+           android:text="Mouth"/>
+
+       <CheckBox
+           android:layout_column="0"
+           android:layout_row="4"
+           android:text="Mustage" />
+
+       <CheckBox
+           android:layout_column="1"
+           android:layout_row="4"
+           android:text="Shoes"/>
+
+   </GridLayout>
+
+</RelativeLayout>
