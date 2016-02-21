@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,29 +7,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.nadeche.mr_potato_head.MainActivity">
+    tools:context="com.example.nadeche.mr_potato_head.MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:text="@string/app_name"
         android:textSize="25sp"
-        android:id="@+id/title"/>
+        android:id="@+id/title"
+        android:layout_weight="2" />
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/potato_head_frame">
+        android:id="@+id/potato_head_frame"
+        android:layout_weight="3">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/body"
-            android:id="@+id/head" />
+            android:id="@+id/head"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -91,22 +91,22 @@
             android:src="@drawable/shoes"
             android:id="@+id/shoes" />
 
-    </FrameLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/potato_head_frame"
-        android:layout_centerHorizontal="true"
         android:text="Build your own Mr. Potato head!"
         android:textSize="18sp"
-        android:id="@+id/build_message"/>
+        android:id="@+id/build_message"
+        android:layout_weight="1" />
 
    <GridLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_centerHorizontal="true"
-       android:layout_below="@id/build_message">
+       android:layout_below="@id/build_message"
+       android:layout_weight="1"
+       android:paddingTop="10dp">
 
        <CheckBox
            android:layout_column="0"
@@ -160,4 +160,4 @@
 
    </GridLayout>
 
-</RelativeLayout>
+</LinearLayout>
