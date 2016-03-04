@@ -8,8 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nadeche.mr_potato_head.MainActivity"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
@@ -147,57 +147,57 @@
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="0"
-           android:layout_row="1"
+           android:layout_column="2"
+           android:layout_row="0"
            android:text="Ears"
            android:id="@+id/ears_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="1"
-           android:layout_row="1"
+           android:layout_column="3"
+           android:layout_row="0"
            android:text="Eyebrowes"
            android:id="@+id/eyebrows_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
            android:layout_column="0"
-           android:layout_row="2"
+           android:layout_row="1"
            android:text="Eyes"
            android:id="@+id/eyes_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
            android:layout_column="1"
-           android:layout_row="2"
+           android:layout_row="1"
            android:text="Glasses"
            android:id="@+id/glasses_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="0"
-           android:layout_row="3"
+           android:layout_column="2"
+           android:layout_row="1"
            android:text="Hat"
            android:id="@+id/hat_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="1"
-           android:layout_row="3"
+           android:layout_column="3"
+           android:layout_row="1"
            android:text="Mouth"
            android:id="@+id/mouth_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="0"
-           android:layout_row="4"
+           android:layout_column="1"
+           android:layout_row="2"
            android:text="Mustage"
            android:id="@+id/mustache_check"
            android:onClick="checkBoxChecked"/>
 
        <CheckBox
-           android:layout_column="1"
-           android:layout_row="4"
+           android:layout_column="2"
+           android:layout_row="2"
            android:text="Shoes"
            android:id="@+id/shoes_check"
            android:onClick="checkBoxChecked"/>
