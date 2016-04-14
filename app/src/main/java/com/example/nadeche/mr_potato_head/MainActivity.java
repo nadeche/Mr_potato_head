@@ -2,20 +2,38 @@ package com.example.nadeche.mr_potato_head;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
 
+        /*Check which body parts should be displayed after orientation change
+        * and display the body parts that are checked*/
 
+        checkBoxChecked(findViewById(R.id.arms_check));
+        checkBoxChecked(findViewById(R.id.ears_check));
+        checkBoxChecked(findViewById(R.id.eyebrows_check));
+        checkBoxChecked(findViewById(R.id.eyes_check));
+        checkBoxChecked(findViewById(R.id.glasses_check));
+        checkBoxChecked(findViewById(R.id.hat_check));
+        checkBoxChecked(findViewById(R.id.mouth_check));
+        checkBoxChecked(findViewById(R.id.mustache_check));
+        checkBoxChecked(findViewById(R.id.nose_check));
+        checkBoxChecked(findViewById(R.id.shoes_check));
     }
 
     public void checkBoxChecked(View box){
@@ -60,9 +78,11 @@ public class MainActivity extends AppCompatActivity {
                 return;
         }
 
+        //display the checked or unchecked body part accordingly
         if(checked)
             body_part.setVisibility(View.VISIBLE);
         else
             body_part.setVisibility(View.INVISIBLE);
+
     }
 }
