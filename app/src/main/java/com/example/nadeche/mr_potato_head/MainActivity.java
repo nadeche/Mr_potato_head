@@ -1,8 +1,12 @@
 package com.example.nadeche.mr_potato_head;
 
+/*
+* Nadeche Studer
+* nadeche.studer@gmail.com
+* */
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -36,14 +40,17 @@ public class MainActivity extends AppCompatActivity {
         checkBoxChecked(findViewById(R.id.shoes_check));
     }
 
-    public void checkBoxChecked(View box){
+    //check which check box is checked or unchecked and display accordingly
+    void checkBoxChecked(View check){
 
-        //is the box now checked?
-        boolean checked = ((CheckBox) box).isChecked();
+        //property
         ImageView body_part;
 
-        //which box is checked or unchecked?
-        switch (box.getId()) {
+        //is the box now checked?
+        boolean checked = ((CheckBox) check).isChecked();
+
+        //which box is checked or unchecked and get the corresponding image id?
+        switch (check.getId()) {
             case R.id.arms_check:
                 body_part = (ImageView) findViewById(R.id.arms);
                 break;
@@ -79,10 +86,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //display the checked or unchecked body part accordingly
-        if(checked)
-            body_part.setVisibility(View.VISIBLE);
-        else
-            body_part.setVisibility(View.INVISIBLE);
+        if(body_part != null) {
+            if (checked)
+                body_part.setVisibility(View.VISIBLE);
+            else
+                body_part.setVisibility(View.INVISIBLE);
+        }
 
     }
 }
