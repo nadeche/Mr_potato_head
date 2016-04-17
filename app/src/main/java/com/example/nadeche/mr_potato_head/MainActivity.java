@@ -3,6 +3,8 @@ package com.example.nadeche.mr_potato_head;
 /*
 * Nadeche Studer
 * nadeche.studer@gmail.com
+* (Apologies for the project name. I stated the project in the previous course,
+* it then had different requirements)
 * */
 
 import android.support.v7.app.AppCompatActivity;
